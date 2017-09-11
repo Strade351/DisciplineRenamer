@@ -27,4 +27,12 @@ public class Renamer {
             e.printStackTrace();
         }
     }
+    void renameFiles() {
+        String path = "doc2pdf/";
+        File file;
+        for (int i = 0; i < notes.size(); i++) {
+            file = new File(path + notes.get(i).getOldName());
+            file.renameTo(new File(path + notes.get(i).getNewName()));
+        }
+    }
 }

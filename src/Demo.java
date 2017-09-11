@@ -5,6 +5,7 @@ public class Demo {
     public static void main(String[] args) {
         Renamer renamer = new Renamer();
         renamer.readCSV();
+        renamer.renameFiles();
     }
 
 }
