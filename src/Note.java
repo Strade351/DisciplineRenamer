@@ -24,4 +24,9 @@ public class Note {
     public void setNewName(String newName) {
         this.newName = newName;
     }
+
+    @Override
+    public String toString() {
+        return getOldName() + " " + getNewName() + "\n";
+    }
 }
