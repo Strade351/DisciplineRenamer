@@ -4,6 +4,7 @@
 public class Note {
     private String oldName;
     private String newName;
+
     Note(String oldName, String newName) {
         this.oldName = oldName;
         this.newName = newName;
@@ -13,16 +14,8 @@ public class Note {
         return oldName;
     }
 
-    public void setOldName(String oldName) {
-        this.oldName = oldName;
-    }
-
     public String getNewName() {
         return newName;
-    }
-
-    public void setNewName(String newName) {
-        this.newName = newName;
     }
 
     @Override
